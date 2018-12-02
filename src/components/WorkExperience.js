@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import {
-  Container,
   Row,
   Col,
   Card,
@@ -8,8 +7,7 @@ import {
   CardText,
   CardBody,
   CardTitle,
-  CardSubtitle,
-  Button
+  CardSubtitle
 } from "reactstrap";
 
 class WorkCard extends Component {
@@ -31,6 +29,7 @@ class WorkCard extends Component {
             top
             width="100%"
             src={this.state.logo}
+            className="img-fluid"
             alt="Card image cap"
           />
           <CardBody>
@@ -65,8 +64,8 @@ export default class WorkExperience extends Component {
       {
         logo:
           "https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180",
-        description:
-          "Some quick example text to build on the card title and make up the bulk of the cards content"
+      description:
+        "Some quick example text to build on the card title and make up the bulk of the cards content"
       }
     ];
   }
@@ -75,7 +74,9 @@ export default class WorkExperience extends Component {
       <div>
         <Row>
           {this.works.map((i, index) => {
-            return  <Col md={{ size: '3', offset: 1 }} key={index}><WorkCard logo={i.logo} description={i.description}/></Col>
+            return  <Col md={{ size: '3', offset: 1 }} key={index}>
+            <WorkCard logo={i.logo} description={i.description}/>
+          </Col>
           })}
         </Row>
       </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import logo from '../logo.svg';
 import WorkExperience from './WorkExperience'
 import Expertise from './Expertise'
 import Bio from './Bio'
@@ -15,11 +14,11 @@ export default class Layout extends Component {
       <Navigation/>
       <Welcome/>
       <Bio/>
-      <SectionTitle title="Expetise" description="Things I do" id="expertise-section"/>
+      <SectionTitle title="EXPERTISE" description="Skills I am good at but not limited to." id="expertise-section"/>
       <Expertise />
-      <SectionTitle title="Work" description="Work I do" id="work-section"/>
+      <SectionTitle title="WORK" description="Companies and People I worked with." id="work-section"/>
       <WorkExperience/>
-      <SectionTitle title="Find Me" id="findme-section"/>
+      <SectionTitle title="FIND ME" description="Available to talk and collaborate about work." id="findme-section"/>
       <Contact />
       <Legal/>
     </div>

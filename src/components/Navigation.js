@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Jumbotron, Nav, NavItem, NavLink } from "reactstrap";
-import ReactDOM from 'react-dom';
+import { Nav, NavItem, NavLink } from "reactstrap";
 
 const style = {
         position: 'fixed',
@@ -45,7 +44,7 @@ export default class Navigation extends Component {
     return (
         <Nav style={style}>
           {this.navs.map((i, index) => {
-            return  <NavItem>
+            return  <NavItem key={index}>
             <NavLink onClick={() => this.onScrollDown(i.id)}>{i.name}</NavLink>
           </NavItem>
           })}

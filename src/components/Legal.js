@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Jumbotron, Nav, NavItem, NavLink } from "reactstrap";
-import ReactDOM from 'react-dom';
+import {  Nav } from "reactstrap";
 
 const style = {
         backgroundColor: 'lightcoral',
@@ -8,7 +7,7 @@ const style = {
         justifyContent: 'center',
         fontSize: '16px',
         color: 'aliceblue',
-        height: '40px'
+        height: '30px'
 }
 
 export default class Legal extends Component {
@@ -18,30 +17,14 @@ export default class Legal extends Component {
             const tesNode = document.querySelector(id)
            tesNode.scrollIntoView();
         }
-        this.navs = [
-            {
-                id: '#expertise-section',
-                name: 'Expertise'
-            },
-            {
-                id: '#work-section',
-                name: 'Work'
-            },
-            {
-                id: '#findme-section',
-                name: 'Find Me'
-            },
-            
-        ] 
+        this.currentDate = new Date().getFullYear()
       }
   render() {
     return (
         <Nav style={style}>
-          {this.navs.map((i, index) => {
-            return  <NavItem>
-            <NavLink onClick={() => this.onScrollDown(i.id)}>{i.name}</NavLink>
-          </NavItem>
-          })}
+          <div>
+            Copyright © {this.currentDate} Charmaine Stepaniuk. All rights reserved.
+          </div>
         </Nav>
     );
   }
