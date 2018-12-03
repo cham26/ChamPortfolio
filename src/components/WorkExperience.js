@@ -1,82 +1,23 @@
 import React, { Component } from "react";
-import {
-  Row,
-  Col,
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle
-} from "reactstrap";
-
-class WorkCard extends Component {
-    constructor(props){
-        super(props);
-        this.state = { 
-            logo: this.props.logo,
-            description: this.props.description
-        };
-        this.cardStyle = {
-            maxWidth: '75%'
-        }
-    }
-  render() {
-    return (
-      <div>
-        <Card style={this.cardStyle}>
-          <CardImg
-            top
-            width="100%"
-            src={this.state.logo}
-            className="img-fluid"
-            alt="Card image cap"
-          />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>
-            {this.state.description}
-            </CardText>
-          </CardBody>
-        </Card>
-      </div>
-    );
-  }
-}
+import { Row, Col } from "reactstrap";
+import { getWorks } from "../services/dataService";
+import WorkCard from "./WorkCard";
 
 export default class WorkExperience extends Component {
   constructor(props) {
     super();
-    this.works = [
-      {
-        logo:
-          "https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180",
-        description:
-          "Some quick example text to build on the card title and make up the bulk of the cards content"
-      },
-      {
-        logo:
-          "https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180",
-        description:
-          "Some quick example text to build on the card title and make up the bulk of the cards content"
-      },
-      {
-        logo:
-          "https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180",
-      description:
-        "Some quick example text to build on the card title and make up the bulk of the cards content"
-      }
-    ];
+    this.works = getWorks();
   }
   render() {
     return (
       <div>
-        <Row>
+        <Row className="justify-content-center">
           {this.works.map((i, index) => {
-            return  <Col md={{ size: '3', offset: 1 }} key={index}>
-            <WorkCard logo={i.logo} description={i.description}/>
-          </Col>
+            return (
+              <Col md={{ size: 4 }} key={index}>
+                <WorkCard logo={i.logo} description={i.description} />
+              </Col>
+            );
           })}
         </Row>
       </div>
