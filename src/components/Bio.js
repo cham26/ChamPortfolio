@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
-import bio from '../assets/bio2.jpeg';
+import bio from '../assets/bio2-min.jpeg';
 export default class Bio extends Component {
   constructor(props) {
     super(props);

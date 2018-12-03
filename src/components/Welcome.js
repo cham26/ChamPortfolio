@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Jumbotron } from "reactstrap";
-import Background from "../assets/bg.png";
+import Background from "../assets/bg-min.png";
 const JumbotronStyle = {
   background: `url(${Background}) no-repeat  center center`,
   backgroundSize: "cover",
