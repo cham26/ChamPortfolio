@@ -55,9 +55,7 @@ export default class Navigation extends Component {
   }
 
   toggleNavbar() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+    this.setState(() => ({ isOpen: !this.state.isOpen }));
   }
 
   onScrollDown(id) {

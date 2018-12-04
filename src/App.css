@@ -1,4 +1,0 @@
-.breadcrumb-item+.breadcrumb-item::before {
-  color: red;
-  content: "test !important";
-}
