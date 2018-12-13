@@ -1,17 +1,31 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { expertise } from "../services/dataService";
+import BaseImage from "./Base/BaseImage";
+import { css } from "emotion";
+
+const style = css`
+  .descriptionStyle {
+    font-family: sans-serif;
+    text-align: justify;
+    fontsize: 18px;
+  }
+`;
 
 export default function Expertise() {
   return (
-    <Container fluid>
-      {expertise.map((i, index) => {
+    <Container fluid className={style}>
+      {expertise.map(i => {
         return (
-          <Row className="py-2" key={index}>
+          <Row className="py-2" key={i.id}>
             <Col md={{ size: 6, offset: 1 }}>
-              <img src={i.src} alt="" className="img-fluid" />
+              <BaseImage imageSrc={i.src} cssClasses={["img-fluid"]} />
             </Col>
-            <Col md={{ size: 4 }}>{i.text}</Col>
+            <Col md={{ size: 4 }}>
+              <b>{i.text}</b>
+              <hr />
+              <p className="descriptionStyle">{i.description}</p>
+            </Col>
           </Row>
         );
       })}

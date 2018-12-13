@@ -1,20 +1,31 @@
 import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import bio from "../assets/bio2-min.jpeg";
+import BaseImage from "./Base/BaseImage";
+import { css } from "emotion";
+import ResumeModal from "./ResumeModal";
 
-const imageStyle = {
-  maxHeight: "500px"
-};
-const buttonStyle = {
-  width: "200px",
-  fontSize: "25px"
-};
-const headingStyle = {
-  fontFamily: "proxima_nova_rgregular"
-};
-const labelColor = {
-  color: "lightcoral"
-};
+const override = css`
+  .buttonStyle {
+    width: 230px;
+    fontsize: 25px;
+    background-color: lightcoral;
+    border-color: white;
+    font-family: fantas;
+  }
+  .headingStyle {
+    font-family: fantasy;
+    font-size: 60p;
+  }
+  .noteStyle {
+    font-family: sans-serif;
+    text-align: justify;
+    fontsize: 18p;
+  }
+  .labelColor {
+    color: lightcoral;
+  }
+`;
 
 const email = "charmaine.stepaniuk@gmail.com";
 
@@ -23,48 +34,81 @@ export default function Bio() {
     window.location.href = `mailto:${email}`;
   };
 
+  const onResumeView = () => {};
+
   return (
-    <Container fluid id="bio-section" className="mt-5">
+    <Container fluid id="bio-section" className={override}>
       <Row className="py-5 justify-content-center">
         <Col md={{ size: 5, offset: 1 }}>
           <div>
-            <h1 className="display-3" style={headingStyle}>
-              <b style={labelColor}>Lives</b> in Ukraine
+            <h1 className="display-3 headingStyle">
+              <strong className="labelColor">Lives</strong> in Ukraine
               <br />
-              <b style={labelColor}>Works</b> anywhere
+              <strong className="labelColor">Works</strong> anywhere
             </h1>
           </div>
+          <br />
           <div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reprehenderit doloribus velit iure mollitia quos vitae accusamus
-              debitis, soluta eum. Consequatur id, fuga repellendus explicabo
-              dolore laborum perferendis ducimus ipsam quod repellat enim!
-              Laborum hic facere porro minus quis ea ut saepe perspiciatis
-              accusamus alias repellat mollitia, rerum eum. Quas, expedita
-              facilis voluptatem et odio accusantium quidem neque inventore,
-              dolore beatae quo quis, suscipit commodi aspernatur nam
-              necessitatibus id! Maiores ipsum perferendis cum totam aspernatur
-              et similique corrupti in ut, eveniet non exercitationem quasi
-              delectus eaque itaque vitae alias debitis eligendi quia culpa
-              rerum quis? Cumque nisi unde culpa placeat aliquid debitis
-              accusamus sunt error aut, delectus omnis doloremque maxime! Quod,
-              ipsam sed asperiores nesciunt quis vero placeat alias ad?
-              Mollitia?
+            <p className="noteStyle">
+              Hi there! I'm{" "}
+              <strong>
+                <span className="labelColor">Cham</span>
+              </strong>
+              , a nurse by profession turned{" "}
+              <strong>
+                <span className="labelColor">
+                  Virtual Assistant since 2017.{" "}
+                </span>
+              </strong>
+              My goal is to{" "}
+              <strong>
+                <span className="labelColor">provide services</span>{" "}
+              </strong>
+              that delight consumers and business owners. I aim to{" "}
+              <strong>
+                <span className="labelColor">drive innovation</span>{" "}
+              </strong>
+              across organizations, expand existing customer sales, brand and
+              product evolution,{" "}
+              <strong>
+                <span className="labelColor">
+                  excellent customer satisfaction{" "}
+                </span>
+              </strong>
+              and social media endorsement. <br />
+              <br />I am a work in progress but I know I'll always give my best
+              in everything I do. After all, Franklin Roosevelt once said,{" "}
+              <strong>
+                <span className="labelColor">
+                  "A smooth sea never made a skilled sailor".
+                </span>
+              </strong>
             </p>
           </div>
           <div className="text-center pt-5">
-            <Button color="primary" onClick={onContactMe} style={buttonStyle}>
-              Contact Me
-            </Button>
+            <Row>
+              <Col>
+                <Button onClick={onContactMe} className="buttonStyle">
+                  Contact me
+                </Button>
+              </Col>
+              <Col>
+                <ResumeModal
+                  buttonLabel="View Online Resume"
+                  cssClasses={["buttonStyle"]}
+                />
+                {/* <Button onClick={onResumeView} className="buttonStyle">
+              View Online Resume
+            </Button> */}
+              </Col>
+            </Row>
           </div>
         </Col>
         <Col md={{ size: 5, offset: 1 }} className="py-2 text-center">
-          <img
-            src={bio}
-            className="rounded-circle img-fluid"
-            style={imageStyle}
-            alt=""
+          <BaseImage
+            imageSrc={bio}
+            style={{ maxHeight: "500px" }}
+            cssClasses={["rounded-circle img-fluid"]}
           />
         </Col>
       </Row>

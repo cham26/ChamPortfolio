@@ -9,7 +9,7 @@ export default function Contact() {
     <Container fluid className="pb-4">
       <Row className="text-center">
         <Col md={{ size: 12 }}>
-          {contacts.map((i, index) => {
+          {contacts.map(i => {
             return (
               <FontAwesomeIcon
                 icon={["fab", i.src]}
@@ -17,7 +17,7 @@ export default function Contact() {
                 style={i.style}
                 title={i.title}
                 onClick={() => redirectToSocialMedia(i.link)}
-                key={index}
+                key={i.id}
               />
             );
           })}

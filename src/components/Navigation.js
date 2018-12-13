@@ -74,9 +74,9 @@ export default class Navigation extends Component {
         <NavbarToggler onClick={this.toggleNavbar} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="m-auto" navbar>
-            {navs.map((i, index) => {
+            {navs.map(i => {
               return (
-                <NavItem key={index}>
+                <NavItem key={i.id}>
                   <NavLink onClick={() => this.onScrollDown(i.id)}>
                     <span style={colorWhite}>{i.name}</span>
                   </NavLink>

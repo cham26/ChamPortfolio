@@ -1,5 +1,6 @@
 export const contacts = [
   {
+    id: 1,
     src: "facebook-f",
     title: "Facebook",
     style: {
@@ -9,6 +10,7 @@ export const contacts = [
     link: "https://www.facebook.com/charmaine.stepaniuk"
   },
   {
+    id: 2,
     src: "linkedin",
     title: "Linkedin",
     style: {
@@ -19,6 +21,7 @@ export const contacts = [
     link: "https://www.linkedin.com/in/charmaine-ayuban-979190a0"
   },
   {
+    id: 3,
     src: "twitter",
     title: "Twitter",
     style: {
@@ -31,28 +34,53 @@ export const contacts = [
 
 export const expertise = [
   {
+    id: 1,
     src: require("../assets/placeholder.jpg"),
-    text: "CLINICAL SUPPORT"
+    text: "Amazon Account Management1",
+    description: `Product research and listing. Supplier Sourcing. 
+    Customer Service and Inventory management. Drives business reviews 
+    and performs analysis to understand sales trends.
+     Monitors information about client’s products and work with them to
+      achieve data standards which will align with a 
+     best-in-class customer experience.`
   },
   {
+    id: 2,
     src: require("../assets/placeholder.jpg"),
-    text:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit doloribus velit iure mollitia quos vitae accusamus debitis, soluta eum. Consequatur id, fuga repellendus explicabo dolore laborum perferendis ducimus ipsam quod repellat enim! Laborum hic facere porro minus quis ea ut saepe perspiciatis accusamus alias repellat mollitia, rerum eum. Quas, expedita facilis voluptatem et odio accusantium quidem neque inventore, dolore beatae quo quis, suscipit commodi aspernatur nam necessitatibus id! Maiores ipsum perferendis cum totam aspernatur et similique corrupti in ut, eveniet non exercitationem quasi delectus eaque itaque vitae alias debitis eligendi quia culpa rerum quis? Cumque nisi unde culpa placeat aliquid debitis accusamus sunt error aut, delectus omnis doloremque maxime! Quod, ipsam sed asperiores nesciunt quis vero placeat alias ad? Mollitia?"
+    text: "Data Analysis and Management"
+  },
+  {
+    id: 3,
+    src: require("../assets/placeholder.jpg"),
+    text: "Web Design and Web Content Writing"
+  },
+  {
+    id: 4,
+    src: require("../assets/placeholder.jpg"),
+    text: "Internet Marketing"
+  },
+  {
+    id: 5,
+    src: require("../assets/placeholder.jpg"),
+    text: "Project Management"
   }
 ];
 
 export const works = [
   {
+    id: 1,
     logo: require("../assets/work.jpg"),
     description:
       "Some quick example text to build on the card title and make up the bulk of the cards content"
   },
   {
+    id: 2,
     logo: require("../assets/work.jpg"),
     description:
       "Some quick example text to build on the card title and make up the bulk of the cards content"
   },
   {
+    id: 3,
     logo: require("../assets/work.jpg"),
     description:
       "Some quick example text to build on the card title and make up the bulk of the cards content"

@@ -6,9 +6,9 @@ import WorkCard from "./WorkCard";
 export default function WorkExperience() {
   return (
     <Row className="justify-content-center">
-    {works.map((i, index) => {
+    {works.map(i=> {
       return (
-        <Col md={{ size: 4 }} key={index}>
+        <Col md={{ size: 4 }} key={i.id}>
           <WorkCard logo={i.logo} description={i.description} />
         </Col>
       );

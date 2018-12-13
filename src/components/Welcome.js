@@ -10,7 +10,7 @@ const JumbotronStyle = {
   flexDirection: "column",
   justifyContent: "center",
   textShadow: "white 0px 0px 10px",
-  fontFamily: "dancing script"
+  fontFamily: "Impact"
 };
 
 export default function Welcome() {
@@ -20,7 +20,7 @@ export default function Welcome() {
         <b>CHARMAINE STEPANIUK</b>
       </h1>
       <h2>
-        Clinical Support Specialist | Amazon Account Manager | Executive VA
+        Virtual Assistant | Clinical Support Specialist | Amazon Account Manager
       </h2>
     </Jumbotron>
   );
