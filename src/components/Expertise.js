@@ -6,9 +6,9 @@ import { css } from "emotion";
 
 const style = css`
   .descriptionStyle {
-    font-family: sans-serif;
+    font-family: monospace;
     text-align: justify;
-    fontsize: 18px;
+    font-size: 16px;
   }
 `;
 

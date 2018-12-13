@@ -8,10 +8,10 @@ import ResumeModal from "./ResumeModal";
 const override = css`
   .buttonStyle {
     width: 230px;
-    fontsize: 25px;
+    font-size: 18px;
     background-color: lightcoral;
     border-color: white;
-    font-family: fantas;
+    font-family: monospace;
   }
   .headingStyle {
     font-family: fantasy;

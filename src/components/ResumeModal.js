@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { pdfjs, Document, Page } from "react-pdf";
-import file from "../assets/Cham's Resume.pdf";
+import file from "../assets/chamPortfolio.pdf";
 import FileSaver from "file-saver";
 import { css } from "emotion";
 import { CircleLoader } from "react-spinners";
