@@ -7,7 +7,9 @@
 
 # testing
 /coverage
-
+/.cache
+/.dist
+/dist
 # production
 /build
 

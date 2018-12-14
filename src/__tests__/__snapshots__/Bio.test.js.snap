@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  className="css-95n8ty container-fluid"
+  id="bio-section"
+>
+  <div
+    className="py-5 justify-content-center row"
+  >
+    <div
+      className="col-md-5 offset-md-1"
+    >
+      <div>
+        <h1
+          className="display-3 headingStyle"
+        >
+          Strives for 
+          <strong
+            className="labelColor"
+          >
+            Quality
+          </strong>
+          <br />
+          Works 
+          <strong
+            className="labelColor"
+          >
+            Professionally
+          </strong>
+        </h1>
+      </div>
+      <br />
+      <div>
+        <p
+          className="noteStyle"
+        >
+          Hi there! I'm
+           
+          <strong>
+            <span
+              className="labelColor"
+            >
+              Cham
+            </span>
+          </strong>
+          , a nurse by profession turned
+           
+          <strong>
+            <span
+              className="labelColor"
+            >
+              Virtual Assistant since 2017.
+               
+            </span>
+          </strong>
+          My goal is to
+           
+          <strong>
+            <span
+              className="labelColor"
+            >
+              provide services
+            </span>
+             
+          </strong>
+          that delight consumers and business owners. I aim to
+           
+          <strong>
+            <span
+              className="labelColor"
+            >
+              drive innovation
+            </span>
+             
+          </strong>
+          across organizations, expand existing customer sales, brand and product evolution,
+           
+          <strong>
+            <span
+              className="labelColor"
+            >
+              excellent customer satisfaction
+               
+            </span>
+          </strong>
+          and social media endorsement. 
+          <br />
+          <br />
+          I am a work in progress but I know I'll always give my best in everything I do. After all, Franklin Roosevelt once said,
+           
+          <strong>
+            <span
+              className="labelColor"
+            >
+              "A smooth sea never made a skilled sailor".
+            </span>
+          </strong>
+        </p>
+      </div>
+      <div
+        className="text-center pt-5"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col"
+          >
+            <button
+              aria-label={null}
+              className="buttonStyle btn btn-secondary"
+              onClick={[Function]}
+              type="button"
+            >
+              Contact me
+            </button>
+          </div>
+          <div
+            className="col"
+          >
+            <button
+              aria-label={null}
+              className="buttonStyle btn btn-secondary"
+              onClick={[Function]}
+              type="button"
+            >
+              View Online Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="py-2 text-center col-md-5 offset-md-1"
+    >
+      <div
+        className="css-1yajfje"
+      >
+        <div
+          className="css-1vq1ez6"
+        />
+        <div
+          className="css-ry4pbn"
+        />
+        <div
+          className="css-1y3qqjp"
+        />
+        <div
+          className="css-1sndib6"
+        />
+        <div
+          className="css-qqk109"
+        />
+      </div>
+      <img
+        alt="did not load"
+        className="rounded-circle img-fluid"
+        onError={[Function]}
+        onLoad={[Function]}
+        src={
+          Object {
+            "process": [Function],
+          }
+        }
+        style={
+          Object {
+            "maxHeight": "500px",
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
