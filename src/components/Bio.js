@@ -44,7 +44,7 @@ export default function Bio() {
 						<h1 className="display-3 headingStyle">
 							Strives for <strong className="labelColor">Quality</strong>
 							<br />
-							Works <strong className="labelColor">Professionally</strong>
+							Works <strong className="labelColor">Passionately</strong>
 						</h1>
 					</div>
 					<br />
@@ -54,7 +54,7 @@ export default function Bio() {
 							<strong>
 								<span className="labelColor">Cham</span>
 							</strong>
-							{'	, a nurse by profession turned'}
+							, a nurse by profession turned{' '}
 							<strong>
 								<span className="labelColor">Virtual Assistant since 2017. </span>
 							</strong>

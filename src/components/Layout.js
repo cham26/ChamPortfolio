@@ -21,12 +21,6 @@ const ScrollToTopCustomStyles = {
 	zIndex: 99999
 }
 
-const contentWrapper = {
-	overflowY: 'scroll',
-	height: ' 100vh',
-	overflowX: 'hidden'
-}
-
 export default function Layout() {
 	return (
 		<Fragment>
@@ -36,29 +30,19 @@ export default function Layout() {
 					<img src={arrowUp} alt="" title="Scroll up" />
 				</div>
 			</ScrollToTop>
-			<div style={contentWrapper}>
-				<Welcome />
-				<Bio />
-				<SectionTitle
-					title="EXPERTISE"
-					description="Skills I am good at but not limited to."
-					id="expertise-section"
-				/>
-				<Expertise />
-				<SectionTitle
-					title="WORK"
-					description="Companies and People I worked with."
-					id="work-section"
-				/>
-				<WorkExperience />
-				<SectionTitle
-					title="FIND ME"
-					description="Available to talk and collaborate about work."
-					id="findme-section"
-				/>
-				<Contact />
-				<Legal />
-			</div>
+			<Welcome />
+			<Bio />
+			<SectionTitle
+				title="EXPERTISE"
+				description="Skills I am proficient at but not limited to."
+				id="expertise-section"
+			/>
+			<Expertise />
+			<SectionTitle title="WORK" description="Companies and People I worked with." id="work-section" />
+			<WorkExperience />
+			<SectionTitle title="FIND ME" description="Available to talk and collaborate about work." id="findme-section" />
+			<Contact />
+			<Legal />
 		</Fragment>
 	)
 }
