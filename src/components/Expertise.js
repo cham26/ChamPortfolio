@@ -75,10 +75,19 @@ const style = css`
 		/foroldbrowsers/border-top: 1px solid rgba(179, 179, 179, 0.7);
 		margin-top: 5px;
 		padding-top: 2px;
-		display: none;
+		display: inline-block;
 	}
 	.hvrbox.active .hvrbox-text_mobile {
 		display: block;
+	}
+	@media only screen and (max-width: 600px) {
+		.hvrbox .hvrbox-text {
+			width: fit-content;
+		}
+		.hvrbox .hvrbox-layer_top,
+		.hvrbox.active .hvrbox-layer_top {
+			opacity: 1;
+		}
 	}
 `
 
@@ -89,13 +98,7 @@ export default function Expertise() {
 				{expertise.map(i => (
 					<Col lg={{ size: 4 }} md={{ size: 6 }} key={i.id} className="pb-5">
 						<div className="hvrbox">
-							<BaseImage
-								imageSrc={i.src}
-								cssClasses={['hvrbox-layer_bottom']}
-								style={{
-									maxWidth: '750px'
-								}}
-							/>
+							<BaseImage imageSrc={i.src} cssClasses={['hvrbox-layer_bottom']} />
 							<div className="hvrbox-layer_top">
 								<div className="hvrbox-text">
 									<strong> {i.text}</strong>

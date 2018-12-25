@@ -36,14 +36,12 @@ export const contacts = [
 export const expertise = [
 	{
 		id: 1,
-		src: require('../assets/expertise/amazon.png'),
-		text: 'Amazon Account Management',
-		description: `Product research and listing. Supplier Sourcing. 
-    Customer Service and Inventory management. Drives business reviews 
-    and performs analysis to understand sales trends.
-     Monitors information about client’s products and work with them to
-      achieve data standards which will align with a 
-     best-in-class customer experience.`
+		src: require('../assets/expertise/dataanalysis.jpg'),
+		text: 'Data Analysis and Management',
+		description: `I’ll translate numbers, collect data, create PowerPoint presentation. 
+    Whether it’s sales figures, market research or shipment costs, 
+    I’ll find the best way to convey it to help you make better business decisions.`
+		
 	},
 	{
 		id: 2,
@@ -54,11 +52,11 @@ export const expertise = [
 	},
 	{
 		id: 3,
-		src: require('../assets/expertise/dataanalysis.jpg'),
-		text: 'Data Analysis and Management',
-		description: `I’ll translate numbers, collect data, create PowerPoint presentation. 
-    Whether it’s sales figures, market research or shipment costs, 
-    I’ll find the best way to convey it to help you make better business decisions.`	
+		src: require('../assets/expertise/digitalmarketing.jpg'),
+		text: 'Digital Marketing',
+		description: `Every company thrives to succeed but not everyone is lucky to achieve it. 
+    I aim to promote and connect your business to your target audience via digital channels which
+     will help boost your sales and market.`	
 	},
 	{
 		id: 4,
@@ -69,11 +67,12 @@ export const expertise = [
 	},
 	{
 		id: 5,
-		src: require('../assets/expertise/digitalmarketing.jpg'),
-		text: 'Digital Marketing',
-		description: `Every company thrives to succeed but not everyone is lucky to achieve it. 
-    I aim to promote and connect your business to your target audience via digital channels which
-     will help boost your sales and market.`
+		src: require('../assets/expertise/amazon.png'),
+		text: 'Amazon Account Management',
+		description: `Product research and listing. Supplier Sourcing. 
+		Inventory management. Monitors information about client’s products and work with them to
+      achieve data standards which will align with a 
+     best-in-class customer experience.`
 	},
 	{
 		id: 6,
@@ -87,20 +86,23 @@ export const expertise = [
 export const works = [
 	{
 		id: 1,
-		logo: require('../assets/work.jpg'),
+		logo: require('../assets/workCard/choice.jpg'),
 		title: 'Choice Property, Ltd.',
-		description: 'Customer Care Specialist'
+		position: 'Executive VA',
+		description: 'Property investment company in the Cambridgeshire area. Specializing in converting properties to houses of multiple occupation and are currently venturing into small scale development.'
 	},
 	{
 		id: 2,
-		logo: require('../assets/work.jpg'),
+		logo: require('../assets/workCard/rhythm.jpg'),
 		title: 'Rhythm Management Group',
-		description: 'Some quick example text to build on the card title and make up the bulk of the cards content'
+		position: 'Clinical Support Specialist',
+		description: 'National provider of critical heart device monitoring. Provides solutions for patients seeking to maximize the quality of life benefits of their implanted devices. '
 	},
 	{
 		id: 3,
-		logo: require('../assets/work.jpg'),
+		logo: require('../assets/workCard/convergys.jpg'),
 		title: 'Convergys',
-		description: 'Some quick example text to build on the card title and make up the bulk of the cards content'
+		position: 'Customer Service Representative',
+		description: 'World leader in customer experience outsourcing. Infusing innovation, insights, and operational excellence to make every experience great for your customers and your business.'
 	}
 ]
