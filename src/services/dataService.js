@@ -8,7 +8,7 @@ export const contacts = [
 			color: '#4267b2',
 			cursor: 'pointer'
 		},
-		link: 'https://www.facebook.com/charmaine.stepaniuk'
+		link: 'https://www.facebook.com/charmaine.ayuban'
 	},
 	{
 		id: 2,
