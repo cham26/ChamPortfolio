@@ -41,7 +41,6 @@ export const expertise = [
 		description: `I’ll translate numbers, collect data, create PowerPoint presentation. 
     Whether it’s sales figures, market research or shipment costs, 
     I’ll find the best way to convey it to help you make better business decisions.`
-		
 	},
 	{
 		id: 2,
@@ -56,7 +55,7 @@ export const expertise = [
 		text: 'Digital Marketing',
 		description: `Every company thrives to succeed but not everyone is lucky to achieve it. 
     I aim to promote and connect your business to your target audience via digital channels which
-     will help boost your sales and market.`	
+     will help boost your sales and market.`
 	},
 	{
 		id: 4,
@@ -89,20 +88,23 @@ export const works = [
 		logo: require('../assets/workCard/choice.jpg'),
 		title: 'Choice Property, Ltd.',
 		position: 'Executive VA',
-		description: 'Property investment company in the Cambridgeshire area. Specializing in converting properties to houses of multiple occupation and are currently venturing into small scale development.'
+		description:
+			'Property investment company in the Cambridgeshire area. Specializing in converting properties to houses of multiple occupation and are currently venturing into small scale development.'
 	},
 	{
 		id: 2,
 		logo: require('../assets/workCard/rhythm.jpg'),
 		title: 'Rhythm Management Group',
 		position: 'Clinical Support Specialist',
-		description: 'National provider of critical heart device monitoring. Provides solutions for patients seeking to maximize the quality of life benefits of their implanted devices. '
+		description:
+			'National provider of critical heart device monitoring. Provides solutions for patients seeking to maximize the quality of life benefits of their implanted devices. '
 	},
 	{
 		id: 3,
 		logo: require('../assets/workCard/convergys.jpg'),
 		title: 'Convergys',
 		position: 'Customer Service Representative',
-		description: 'World leader in customer experience outsourcing. Infusing innovation, insights, and operational excellence to make every experience great for your customers and your business.'
+		description:
+			'World leader in customer experience outsourcing. Infusing innovation, insights, and operational excellence to make every experience great for your customers and your business.'
 	}
 ]
