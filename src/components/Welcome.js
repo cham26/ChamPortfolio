@@ -20,7 +20,7 @@ export default function Welcome() {
 				<b>CHARMAINE STEPANIUK</b>
 			</h1>
 			<h2>
-        Virtual Assistant | Clinical Support Specialist | Amazon Account Manager
+        Virtual Assistant | Customer Support Specialist | Amazon Account Manager
 			</h2>
 		</Jumbotron>
 	)
